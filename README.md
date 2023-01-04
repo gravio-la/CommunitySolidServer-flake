@@ -11,7 +11,7 @@ Installation
 
 To install the CommunitySolidServer package and NixOS module, you can add the following lines to your `flake.nix` file:
 
-`
+```
 {
 
   inputs = {
@@ -45,7 +45,7 @@ To install the CommunitySolidServer package and NixOS module, you can add the fo
     };
   }
 }
-`
+```
 
 NixOS Container
 ---------------
@@ -94,14 +94,16 @@ Here is a description of each option:
 For example, to change the port that the server listens on, you can set the `port` option in your `configuration.nix` file:
 
 
-`{
+```
+{
 
   services.solid-server = {
     enable = true;
     package = pkgs.solid-server;
     port = 4000;
   };
-}`
+}
+```
 
 Running the CommunitySolidServer
 --------------------------------
